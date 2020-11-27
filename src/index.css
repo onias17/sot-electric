@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* NAVBAR */
+ nav {
+  position: fixed;
+  display: inline-block;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  background-color: lime;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 15px;
+} 
+
+ul {
+  position: right;
+}
+
+.nav {
+  display: inline;
+}
+
+.title {
+  color: white;
+  background-color: red;
+  text-transform: uppercase;
+  margin: auto;
+}
