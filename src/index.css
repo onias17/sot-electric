@@ -23,10 +23,11 @@ img {
  nav {
   position: fixed;
   display: inline-block;
-  /* top: 0; */
+  top: 0;
   left: 0;
   right: 0;
   background-color: lime;
+  z-index: 100;
 }
 
 nav li {
@@ -43,12 +44,24 @@ ul {
 }
 
 .nav {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
   color: white;
   background-color: red;
   text-transform: uppercase;
-  margin: auto;
+  margin: 0;
+}
+
+.nav-img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  background-color: lime;
+  overflow: auto;
 }
