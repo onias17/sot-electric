@@ -15,6 +15,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  width: 120px;
+}
+
 /* NAVBAR */
  nav {
   position: fixed;
