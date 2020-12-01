@@ -1,8 +1,6 @@
 import react from 'react';
 import Navbar from './components/Navbar';
-import LoginButton from './components/LoginButton';
-import LogoutButton from './components/LogoutButton';
-import Profile from './components/Profile';
+import routes from './config/routes';
 import Footer from './components/Footer';
 import { useAuth0 } from '@auth0/auth0-react';
 
@@ -14,7 +12,7 @@ function App() {
   return (
       <>
         <Navbar />
-        <Profile />
+        { routes }
         <Footer />
       </>
   );
