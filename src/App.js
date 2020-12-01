@@ -1,5 +1,5 @@
 import react from 'react';
-import Navbar from './components/Navbar';
+import Nav from './components/Nav';
 import routes from './config/routes';
 import Footer from './components/Footer';
 import { useAuth0 } from '@auth0/auth0-react';
@@ -10,11 +10,11 @@ function App() {
   if (isLoading) return <div>Loading...</div>
 
   return (
-      <>
-        <Navbar />
+      <div className="main-app">
+        <Nav />
         { routes }
         <Footer />
-      </>
+      </div>
   );
 };
 

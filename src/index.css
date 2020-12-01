@@ -15,6 +15,11 @@ button {
   cursor: pointer;
 }
 
+.main-app {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
   width: 120px;
 }
@@ -53,11 +58,16 @@ ul {
   background-color: red;
   text-transform: uppercase;
   margin: 0;
+  align-self: center;
 }
 
 .nav-img {
-  width: 60px;
+  width: 45px;
   border-radius: 50%;
+}
+
+.home {
+  margin-top: 1000px;
 }
 
 /* FOOTER */
