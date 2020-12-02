@@ -67,8 +67,35 @@ ul {
 }
 
 .home {
-  margin-top: 1000px;
+  /* display: 500vh; */
+  margin-top: 20px;
 }
+
+/* ABOUT */
+.about {
+  background-color: rebeccapurple;
+}
+
+/* .wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.grid-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+} */
 
 /* FOOTER */
 footer {

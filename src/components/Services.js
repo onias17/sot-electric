@@ -3,7 +3,14 @@ import React from 'react';
 const Services = () => {
   return (
     <section id="services" className="services">
-      <h1>SERVICES</h1>
+      <h2>SERVICES</h2>
+      <aside>
+        <ul>
+          <li>Residential</li>
+          <li>Commercial</li>
+          <li>Industrial</li>
+        </ul>
+      </aside>
     </section>
   );
 };
