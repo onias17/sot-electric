@@ -1,5 +1,6 @@
 import React from 'react';
 import AppointmentModel from '../models/appointment';
+import AppointmentCard from '../components/AppointmentCard';
 
 class AppointmentList extends React.Component {
   state = {
@@ -7,6 +8,7 @@ class AppointmentList extends React.Component {
   };
 
   componentDidMount() {
+    // make an API call
     AppointmentModel.all().then((data) => {
       console.log('data', data);
 
