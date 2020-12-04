@@ -13,13 +13,13 @@ const Contact = () => {
           s={12}
         >
           <div>
-            <h6>Phone Number:</h6>
-            <p>123-456-7890</p>
-            <h6>Email:</h6>
+            <h5>PHONE NUMBER</h5>
+            <p>+1 (760) 662-1909</p>
+            <h5>EMAIL</h5>
             <p><a href="" target="_blank">sonsofthundereletric@gmail.com</a></p>
-            <h6>Hours of Operation</h6>
+            <h5>HOURS OF OPERATION</h5>
             <p>Monday - Friday: 8am - 5pm</p>
-            <h6>Social Media:</h6>
+            <h5>SOCIAL MEDIA</h5>
             <div className="social-media">
               <Link to=""><i className="fab fa-instagram"></i></Link>
               <Link to=""><i className="fab fa-facebook"></i></Link>

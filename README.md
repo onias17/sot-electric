@@ -12,6 +12,7 @@ Sons of Thunder: Electric is an electrician business app where users can visit a
 * HTML
 * CSS
 * Materialize
+* Adobe Photoshop
 
 ## Installation Steps
 (The following dependencies were installed to create this app)
@@ -46,19 +47,22 @@ Sons of Thunder: Electric is an electrician business app where users can visit a
 This app has a one to many relationship where users can create a profile and schedule multiple appointments.
 
 ## Unsolved Problems
-* format date on front end
 * add time to appointment model
-* link auth0 user to the appointment model
-* styling
 * add website tab icon
-* prepopulate existing form when editting
+* dropdown for building types
+* format date on front end
+* link auth0 user to the appointment model
+* prepopulate existing form when editing
+* styling
 
 ## Future Features
 * add Google Maps API
-* autofill address input
-* send email to owner once a user schedules an appointment
-* add warning when canceling appointment
-* block out dates and times not availble
-* save history of previous appointments
 * add reviews and ratings of service
+* add warning when canceling appointment
+* authorization for owner of website to view specific pages and info
+* autofill address input
+* block out dates and times not availble
+* carousel for before/after pictures
 * make spanish verison
+* save history of previous appointments
+* send email to owner once a user schedules an appointment

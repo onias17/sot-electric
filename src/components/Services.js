@@ -41,7 +41,7 @@ const Services = () => {
         <li>Repairs</li>
         <li>Surge Protection</li>
         <li>Underground Electrical Trenching</li>
-        <li>And More...</li>
+        <li>And Much More...</li>
       </ul>
       <div className="right-align">
         <Link to={'/appointments/new'}>Schedule An Appointment</Link>
