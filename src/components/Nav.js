@@ -61,7 +61,7 @@ const Nav = () => {
           </a>
         }
       >
-        <Link to={'/profile'}>View Profile</Link>
+        {/* <Link to={'/profile'}>View Profile</Link> */}
         <Link to={'/appointmentlist'}>View Appointments</Link>
         <Divider />
         <LogoutButton />
