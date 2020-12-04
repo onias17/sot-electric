@@ -4,7 +4,6 @@ import LogoutButton from './LogoutButton';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import { NavItem, Navbar, Dropdown, Divider, Icon } from 'react-materialize';
-import SOT from '../images/sot_icon.png';
 
 const Nav = () => {
   const { user, isAuthenticated } = useAuth0();
@@ -12,7 +11,7 @@ const Nav = () => {
   return (
     <Navbar
       alignLinks="right"
-      brand={<img src={SOT} width="30px" className="sot" />, <Link className="brand-logo" to={'/'}>Sons of Thunder</Link>}
+      brand={<Link className="brand-logo" to={'/'}>Sons of Thunder</Link>}
       id="mobile-nav"
       menuIcon={<Icon>menu</Icon>}
       options={{

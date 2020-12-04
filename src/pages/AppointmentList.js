@@ -43,12 +43,12 @@ class AppointmentList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="all-appt">
         <h1>Your Appointments</h1>
         <div className="right-align">
           <Link to={'/appointments/new'}>Schedule A New Appointment</Link>
         </div>
-        <ul>
+        <ul className="appointment">
           {this.state.appointments.length && this.renderAppointments()}
         </ul>
       </div>

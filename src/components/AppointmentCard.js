@@ -12,15 +12,16 @@ const AppointmentCard = (props) => {
           <p>{props.appointment.date}</p>
         </div>
       {/* </Link> */}
-      <div>
-        <Link to={`/appointments/${props.appointment._id}/edit`}>
+      <div className="card-bts">
+        <Link to={`/appointments/${props.appointment._id}/edit`} className="card-btn" >
           Edit
         </Link>
-        <button onClick={() => props.deleteAppointment(props.appointment._id)}>
+        <button onClick={() => props.deleteAppointment(props.appointment._id)} className="card-btn">
           Cancel
         </button>
       </div>
       <br />
+      <hr />
     </div>
   );
 };

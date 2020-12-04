@@ -6,7 +6,7 @@ import map from '../images/ie_map.jpg';
 const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <h2 className="center-align contact-us">Contact Us</h2>
+      <h2 className="center-align contact-us headers">Contact Us</h2>
       <Row>
         <Col
           m={6}
@@ -17,6 +17,8 @@ const Contact = () => {
             <p>123-456-7890</p>
             <h6>Email:</h6>
             <p><a href="" target="_blank">sonsofthundereletric@gmail.com</a></p>
+            <h6>Hours of Operation</h6>
+            <p>Monday - Friday: 8am - 5pm</p>
             <h6>Social Media:</h6>
             <div className="social-media">
               <Link to=""><i className="fab fa-instagram"></i></Link>

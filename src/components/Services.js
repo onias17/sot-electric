@@ -9,7 +9,7 @@ import remodelAfter from '../images/remodel_after.jpeg';
 const Services = () => {
   return (
     <section id="services" className="services">
-      <h2 className="center-align service-head">Services</h2>
+      <h2 className="center-align service-head headers">Services</h2>
       <Row className="center-align buildings">
         <Col
           m={4}
@@ -77,6 +77,7 @@ const Services = () => {
           <img src={ remodelAfter } alt="remodel-after" width="100%" height=""/>
         </Col>
       </Row>
+      <hr />
     </section>
   );
 };

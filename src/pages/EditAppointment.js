@@ -45,7 +45,7 @@ const EditAppointment = (props) => {
   };
 
   return (
-    <div>
+    <div className="edit">
       <h2>Edit Your Appointment</h2>
       <form onSubmit={handleFormSubmit}>
         <div>

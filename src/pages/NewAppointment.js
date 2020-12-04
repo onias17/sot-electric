@@ -47,7 +47,7 @@ const NewAppointment = (props) => {
   };
 
   return (
-    <div>
+    <div className="new">
       <h2>Schedule An Appointment</h2>
       <form onSubmit={handleFormSubmit}>
         <div>

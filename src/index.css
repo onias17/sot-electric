@@ -31,11 +31,7 @@ button {
   right: 0;
   background-color: #3b3b00;
   opacity: 1;
-  z-index: 100;
-}
-
-nav li {
-  display: inline-block;
+  /* z-index: 100; */
 }
 
 nav a {
@@ -46,10 +42,17 @@ nav a {
 ul {
   position: right;
 }
+nav .brand-logo {
+  padding-left: 15px;
+}
 
-.nav {
-  display: flex;
-  justify-content: space-between;
+.dropdown-content li>a {
+  color: black;
+}
+
+.brand-logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .sot {
@@ -79,6 +82,11 @@ ul {
   background-color: #d7d7b9;
 }
 
+.headers {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* SERVICES */
 .services {
   background-color: white;
@@ -105,6 +113,41 @@ ul {
 }
 .social-media {
   letter-spacing: 10px;
+}
+
+/* APPOINTMENT CARD */
+.card-bts {
+  display: column;
+  margin-top: auto;
+}
+
+.card-btn {
+  background-color: rgb(237, 237, 237);
+  color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #333;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* NEW APPOINTMENT */
+.new {
+  margin-top: 2.1rem;
+}
+
+/* APPOINTMENT LIST */
+.all-appt {
+  margin-top: 2.1rem;
+}
+
+.appointment {
+  margin-left: 15px;
+}
+
+/* EDIT APPOINTMENT */
+.edit {
+  margin-top: 2.1rem;
 }
 
 /* FOOTER */

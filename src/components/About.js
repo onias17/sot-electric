@@ -1,20 +1,23 @@
 import React from 'react';
-import aboutPic from '../images/pexels-luca-nardone-3651820.jpg';
 import { Row, Col, Card, Icon, CardTitle } from 'react-materialize';
+import aboutPic from '../images/pexels-luca-nardone-3651820.jpg';
+import SOT from '../images/sot_icon.png';
+import SOT1 from '../images/sot_icon1.png';
 
 const About = () => {
   return (
     <section id="about" className="about">
-      <h2 className="center-align">About</h2>
+      <h2 className="center-align headers">About</h2>
       <div className="wrap grid-wrapper">
         <Row
           style={{ marginTop: '20px'}}  
         >
           <Col
+            className=""
             m={6}
             s={12}
           >
-            <Card
+            {/* <Card
               style={{ width: '250px', height: '425px' }}
               closeIcon={<Icon>close</Icon>}
               header={<CardTitle image={ aboutPic } reveal waves="light"/>}
@@ -23,7 +26,8 @@ const About = () => {
               title="Name"
             >
               <p>OWNER</p>
-            </Card>
+            </Card> */}
+            <img src={SOT1} width="300px" className="center-align" />
           </Col>
           <Col
             m={6}
