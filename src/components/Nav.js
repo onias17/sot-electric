@@ -26,18 +26,16 @@ const Nav = () => {
         preventScrolling: true
       }}
     >
-      <NavItem href="">
+      <NavItem href="#about">
         About
       </NavItem>
-      <NavItem href="">
+      <NavItem href="#services">
         Services
       </NavItem>
-      <NavItem href="">
+      <NavItem href="#contact">
         Contact Us
       </NavItem>
-      <NavItem href="">
-        <LoginButton />
-      </NavItem>
+      <LoginButton />
       <Dropdown
         id="Dropdown_6"
         options={{
@@ -63,13 +61,10 @@ const Nav = () => {
           </a>
         }
       >
-        <a href="">
-          <Link to={'/profile'}>View Profile</Link>
-        </a>
+        <Link to={'/profile'}>View Profile</Link>
+        <Link to={'/appointmentlist'}>View Appointments</Link>
         <Divider />
-        <a href="">
-          <LogoutButton />
-        </a>
+        <LogoutButton />
       </Dropdown>
     </Navbar>
   );

@@ -4,7 +4,7 @@ import AppointmentCard from '../components/AppointmentCard';
 
 class AppointmentList extends React.Component {
   state = {
-    apppointments: []
+    appointments: []
   };
 
   componentDidMount() {
@@ -16,10 +16,24 @@ class AppointmentList extends React.Component {
     });
   };
 
-  renderApointments() {
-    return this.state.appointments.map((appointment, index) => {
+  deleteAppointment = (id) => {
+    AppointmentModel.delete(id).then((data) => {
+      this.setState((prevState) => {
+        const updatedAppointments = prevState.appointments.filter((appointment) => appointment.id !== id);
+
+        return { appointments: updatedAppointments };
+      });
+    });
+  };
+
+  renderAppointments() {
+    return this.state.appointments.map((appointment) => {
       return (
-        <AppointmentCard appointment={appointment} key={appointment._id} />
+        <AppointmentCard 
+          appointment={appointment} 
+          key={appointment._id} 
+          deleteAppointment={this.deleteAppointment}
+        />
       );
     });
   };
@@ -28,7 +42,7 @@ class AppointmentList extends React.Component {
     return (
       <div>
         <ul>
-          {this.renderApointments()}
+          {this.state.appointments.length && this.renderAppointments()}
         </ul>
       </div>
     );
