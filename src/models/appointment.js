@@ -25,8 +25,8 @@ class AppointmentModel {
     console.log(newAppointment);
     return fetch(url, {
       method: 'POST',
+      body: JSON.stringify(newAppointment),
       headers: { 'Content-Type': 'application/json' },
-      body: newAppointment
     })
       .then((res) => res.json())
       .catch((err) => {
@@ -35,17 +35,18 @@ class AppointmentModel {
       });
   };
 
-  // static update(appointmentId, updatedAppointment) {
-  //   return fetch(`${url}/${appointmentId}`, {
-  //     method: 'PUT',
-  //     headers: { 'Content-Type': 'application' },
-  //     body: JSON.stringify(updatedAppointment)
-  //   })
-  //   .then((res) => {})
-  //   .catch((res) => {
-  //     console.log('error fetching data in AppointmentModel.update')
-  //   })
-  // }
+  static update(appointmentId, updatedAppointment) {
+    return fetch(`${url}/${appointmentId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updatedAppointment)
+    })
+    .then((res) => res.json())
+    .catch((res) => {
+      console.log('error fetching data in AppointmentModel.update');
+      return { appointment: {} }
+    });
+  };
 
   static delete(appointmentId) {
     return fetch(`${url}/${appointmentId}`, {

@@ -1,7 +1,8 @@
 import React from 'react';
 import AppointmentModel from '../models/appointment';
 import AppointmentCard from '../components/AppointmentCard';
-
+import { Link } from 'react-router-dom';
+ 
 class AppointmentList extends React.Component {
   state = {
     appointments: []
@@ -17,11 +18,13 @@ class AppointmentList extends React.Component {
   };
 
   deleteAppointment = (id) => {
+    console.log('deleted appt')
     AppointmentModel.delete(id).then((data) => {
       this.setState((prevState) => {
         const updatedAppointments = prevState.appointments.filter((appointment) => appointment.id !== id);
+        this.setState({ appointments: updatedAppointments });
 
-        return { appointments: updatedAppointments };
+        return window.location.reload();
       });
     });
   };
@@ -41,6 +44,10 @@ class AppointmentList extends React.Component {
   render() {
     return (
       <div>
+        <h1>Your Appointments</h1>
+        <div className="right-align">
+          <Link to={'/appointments/new'}>Schedule A New Appointment</Link>
+        </div>
         <ul>
           {this.state.appointments.length && this.renderAppointments()}
         </ul>

@@ -5,7 +5,9 @@
 }
 
 body {
-  padding: 2rem;
+  /* padding: 2rem; */
+  background-color: #d7d7b9;
+
 }
 
 button {
@@ -20,10 +22,6 @@ button {
   flex-direction: column;
 }
 
-img {
-  width: 120px;
-}
-
 /* NAVBAR */
  nav {
   position: fixed;
@@ -31,7 +29,8 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  background-color: lime;
+  background-color: #3b3b00;
+  opacity: 1;
   z-index: 100;
 }
 
@@ -53,6 +52,10 @@ ul {
   justify-content: space-between;
 }
 
+.sot {
+  display: inline-block;
+}
+
 .title {
   color: white;
   background-color: red;
@@ -68,37 +71,48 @@ ul {
 
 .home {
   /* display: 500vh; */
-  margin-top: 20px;
+  margin-top: 2.2rem;
 }
 
 /* ABOUT */
 .about {
-  background-color: rebeccapurple;
+  background-color: #d7d7b9;
 }
 
-/* .wrap {
-	max-width: 1000px;
-	width: 100%;
-	margin: 0 auto;
+/* SERVICES */
+.services {
+  background-color: white;
 }
 
-.grid-wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-} */
+.service-head {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.buildings {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.elec-services {
+  letter-spacing: 1px;
+}
+
+/* CONTACT */
+.contact-us {
+  margin-top: 0;
+  padding-top: .1rem;
+}
+.social-media {
+  letter-spacing: 10px;
+}
 
 /* FOOTER */
 footer {
-  background-color: lime;
+  position: fixed;
+  background-color: #3b3b00;
+  color: white;
   overflow: auto;
+  bottom: 0;
+  width: 100%;
 }

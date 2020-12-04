@@ -1,11 +1,11 @@
 import React from 'react';
-import aboutPic from '../images/pexels-luca-nardone-3651820.jpg'
+import aboutPic from '../images/pexels-luca-nardone-3651820.jpg';
 import { Row, Col, Card, Icon, CardTitle } from 'react-materialize';
 
 const About = () => {
   return (
     <section id="about" className="about">
-      <h2 className="center-align">ABOUT</h2>
+      <h2 className="center-align">About</h2>
       <div className="wrap grid-wrapper">
         <Row
           style={{ marginTop: '20px'}}  
