@@ -2,9 +2,9 @@
 
 ## What is SOT: Electric?
 
-Sons of Thunder: Electric is an electrical business app where users can visit and schedule appointments to receive a wide variety of electrical services for thier residential, commercial and/or industrial buildings. Users can create a profile to schedule, review, edit, reschedule and cancel existing appointments.
+Sons of Thunder: Electric is an electrician business app where users can visit and schedule appointments to receive a wide variety of electrical services for thier residential, commercial and/or industrial buildings. Users can create a profile to schedule, review, edit, reschedule and cancel existing appointments.
 
-## Technologies Used:
+## Technologies Used
 * Mongoose
 * Express
 * React.js
@@ -13,7 +13,7 @@ Sons of Thunder: Electric is an electrical business app where users can visit an
 * CSS
 * Materialize
 
-## Installation Steps:
+## Installation Steps
 (The following dependencies were installed to create this app)
 Front End
 * auth0-react
@@ -43,6 +43,7 @@ Back End
 ![edit](src/images/edit_reschedule.png)
 
 ## Entity Relationship Diagrams
+This app has a one to many relationship where users can create a profile and schedule multiple appointments.
 
 ## Unsolved Problems
 * format date on front end
