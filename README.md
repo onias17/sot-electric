@@ -15,7 +15,7 @@ Sons of Thunder: Electric is an electrician business app where users can visit a
 
 ## Installation Steps
 (The following dependencies were installed to create this app)
-Front End
+#### Front End
 * auth0-react
 * materialize-css
 * materialize-social
@@ -23,7 +23,7 @@ Front End
 * react-json-pretty
 * react-materialize
 
-Back End 
+#### Back End 
 * body-parser
 * cors
 * dotenv
