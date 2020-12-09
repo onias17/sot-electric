@@ -58,6 +58,7 @@ This app has a one to many relationship where users can create a profile and sch
 ## Future Features
 * add Google Maps API
 * add reviews and ratings of service
+* add warning modal when cancelling an appointment
 * add warning when canceling appointment
 * authorization for owner of website to view specific pages and info
 * autofill address input
